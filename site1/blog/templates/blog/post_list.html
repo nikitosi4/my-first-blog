@@ -5,6 +5,14 @@
     </title>
 </head>
 <body>
+{% for post in posts %}
+    <div>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+        <p>создано: {{post.created_date}}</p>
+        <p>опубликовано: {{post.published_date}}</p>
+    </div>
+{% endfor %}
 <p>WoW. RLY?! It's  my body? oh Nooooo :(</p>
 </body>
 
