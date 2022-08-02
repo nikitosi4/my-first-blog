@@ -1,19 +1,34 @@
+{% load static %}
 <html>
 <head>
-    <title>
-        WiMH?
-    </title>
+    <title> WiMH? </title>
+        <title>Django Girls blog</title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
 </head>
 <body>
-{% for post in posts %}
-    <div>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-        <p>создано: {{post.created_date}}</p>
-        <p>опубликовано: {{post.published_date}}</p>
+    <div class="page-head">
+        <h1> <a href="/">#NektoS#Site#</a></h1>
     </div>
-{% endfor %}
-<p>WoW. RLY?! It's  my body? oh Nooooo :(</p>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+                {% for post in posts %}
+                    <div class="post">
+                        <h1>{{ post.title }}</h1>
+                        <p>{{ post.text|linebreaksbr }}</p>
+                        <div class="date">
+                            <p>Написано: {{ post.created_date }}</p>
+                            <p>Опубликовано: {{ post.published_date }}</p>
+                        </div>
+                    </div>
+                 {% endfor %}
+            </div>
+         </div>
+    </div>
 </body>
 
 
