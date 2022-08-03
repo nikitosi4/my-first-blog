@@ -1,18 +1,17 @@
 {% load static %}
 <html>
 <head>
-    <title> WiMH? </title>
-        <title>Django Girls blog</title>
-        <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-
+    <title> 🐍 Zoo  🐍</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">,
+    <link rel="icon" href="favicon.ico" type="images/x-icon">
 </head>
 <body>
     <div class="page-head">
-        <h1> <a href="/">#One#More#Site#</a></h1>
-        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        <h1> <a href="/"> 🐍 ZooPedia  🐍</a></h1>
+        <h1><a href="{% url 'post_new' %}" ><span class="glyphicon glyphicon-plus"></span>Добавить новый пост<span class="glyphicon glyphicon-plus"></span></a></h1>
     </div>
     <div class="content container">
         <div class="row">

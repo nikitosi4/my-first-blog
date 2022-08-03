@@ -1,11 +1,11 @@
 .page-head {
     background-color: #ff2400;
-    margin-top: 0;
+    margin-top:-20;
     padding: 20px 20px 20px 40px;
 }
 
 .page-head h1, .page-head h1 a, .page-head h1 a:visited, .page-head h1 a:active {
-    color: #000080;
+    color: #34c924;
     font-size: 36pt;
     text-decoration: none;
 }
@@ -38,7 +38,7 @@ h1, h2, h3, h4 {
 }
 
 .post {
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 }
 
 .post h1 a, .post h1 a:visited {
